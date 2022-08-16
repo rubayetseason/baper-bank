@@ -9,7 +9,7 @@ document.getElementById('btn-submit').addEventListener('click', function () {
     const password = passwordField.value;
     // IMPORTANT!! DO NOT DO THIS AND ALWAYS CHECK EMAIL AND PASSWORD AT SERVER SIDE 
     if (email === 'abc@gmail.com' && password === 'season') {
-       window.location.href = 'bank.html';
+        window.location.href = 'bank.html';
     }
     else {
         alert('invalid user detected');
