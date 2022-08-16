@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap Er Bank | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-7">Let's get some<span class="font-bold text-cyan-600"> moooooney</span></h1>
+    </header>
+    <main>
+        <section class="mt-16">
+            <div class="grid lg:grid-cols-3 md:grid-rows-1 sm:grid-rows-6 gap-5">
+                <div class="bg-red-400 text-white font-medium w-10/12 mx-auto p-8 rounded-xl">
+                    <h4 class="text-2xl ">Deposit Amount</h4>
+                    <h2 class="text-4xl ">BDT <span id="deposit-total"> 00</span></h2>
+                </div>
+                <div class="bg-amber-400 text-white font-medium w-10/12 mx-auto p-8 rounded-xl">
+                    <h4 class="text-2xl ">Withdraw Amount</h4>
+                    <h2 class="text-4xl ">BDT <span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-lime-600 text-white font-medium w-10/12 mx-auto p-8 rounded-xl">
+                    <h4 class="text-2xl ">Balance Amount</h4>
+                    <h2 class="text-4xl ">BDT <span id="balance-total"> 5000</span></h2>
+                </div>
+
+            </div>
+        </section>
+        <!-- depo and withd  -->
+        <section class="mt-10">
+            <div class="grid lg:grid-cols-2 md:grid-rows-1 sm:grid-rows-6 gap-2">
+                <div class="bg-indigo-500  font-medium w-11/12 mx-auto p-8 rounded-xl">
+                    <h3 class="text-2xl  text-white">Deposit Amount Here</h3>
+                    <input type="text" id="deposit-field" class="w-11/12 block mt-5 px-3 rounded"
+                        placeholder="Enter BDT Amount">
+                    <button
+                        class="bg-red-600 text-white py-1.5 px-2 rounded mt-5 font-medium hover:bg-red-700 transition duration-500 ease-in-out"
+                        id="btn-deposit">Deposit</button>
+                </div>
+                <div class="bg-orange-500 font-medium w-11/12 mx-auto p-8 rounded-xl">
+                    <h3 class="text-2xl text-white ">Withdraw Amount Here</h3>
+                    <input type="text" id="withdraw-field" class="w-11/12 block mt-5 px-3 rounded"
+                        placeholder="Enter BDT Amount">
+                    <button
+                        class="bg-red-600 text-white py-1.5 px-2 rounded mt-5 font-medium hover:bg-red-700 transition duration-500 ease-in-out"
+                        id="btn-withdraw">Withdraw</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="bank.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+
+</html>
